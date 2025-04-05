@@ -24,3 +24,30 @@ Run the provided script to install Docker:
 
 ```bash
 bash install_docker.sh
+
+---
+
+## 📦 Step 2: Decide the Trap You Want
+
+This project currently supports the following honeypots:
+
+- **Honeytrap** – [GitHub Repository](https://github.com/buger/honeytrap)
+- **Cowrie** – [GitHub Repository](https://github.com/cowrie/cowrie)
+
+Choose the honeypot you want to install and run the corresponding script:
+
+```bash
+bash install_cowrie.sh
+
+## 📡 (Optional) Send Logs to Elastic with Filebeat
+
+If you want to send honeypot logs to **Elasticsearch** (for example, for visualization with Kibana), you can set up **Filebeat**.
+
+Use the following script:
+
+```bash
+bash install_filebeat.sh
+
+## 🤝 Contributing
+
+PRs and feedback are welcome! Feel free to fork the project and submit a pull request if you'd like to add more honeypots, improve automation, or enhance configuration flexibility.
