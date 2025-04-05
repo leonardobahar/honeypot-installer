@@ -57,6 +57,9 @@ Use the following script:
 ```bash
 bash install_filebeat.sh
 ```
+
+Modify the filebeat configs in /etc/filebeat/filebeat.yml to start exporting your logs to Elastic. After running the Honeypot installer scripts (install_cowrie.sh, install_honeytrap.sh, etc), follow the on screen instruction on where your logs are located.
+
 ## 🤝 Contributing
 
 PRs and feedback are welcome! Feel free to fork the project and submit a pull request if you'd like to add more honeypots, improve automation, or enhance configuration flexibility.
