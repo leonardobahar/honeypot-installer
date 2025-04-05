@@ -40,6 +40,14 @@ Choose the honeypot you want to install and run the corresponding script:
 ```bash
 bash install_cowrie.sh
 ```
+
+To install Honeytrap, on the project directory, preview honeytrap_config.toml first. Include the services you want to run, refer to this [documentation](https://docs.honeytrap.io/services/) for the services you can run on Honeytrap.
+Before running the script below, also edit the docker port bindings of the script to ensure the services you deploy can be accessible through the host ports. By running
+```bash
+bash install_honeytrap.sh
+```
+the script will automatically propagate the config file to the docker specifically into /config/config.toml of Honeytrap.
+
 ## 📡 (Optional) Send Logs to Elastic with Filebeat
 
 If you want to send honeypot logs to **Elasticsearch** (for example, for visualization with Kibana), you can set up **Filebeat**.
